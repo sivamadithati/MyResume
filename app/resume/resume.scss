@@ -1,0 +1,70 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media screen ,print{
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+  -webkit-print-color-adjust: exact;
+  .resume-section{
+    padding:15px;
+    .basic-information{
+      margin-bottom: 2%;
+      .name-font{
+        font-size: 750%;
+      }
+      .same-line{
+        line-height: 1;
+      }
+      .ft110{
+        color: rgb(128, 128, 128);
+        font-size:110%;
+      }
+    }
+    td{
+      border:transparent !important;
+    }
+    td:nth-child(2){
+      padding-right:5%;
+      p{
+        color:#00bfff;
+        text-align: right;
+      }
+      p.experience-label{
+        color:#ff3399;
+      }
+      p.skills-label{
+        color:rgba(128, 128, 128, 0.37);
+      }
+      p.education-label{
+        color:#ff9900;
+      }
+      p:first-child{
+        font-size: 120%;
+        font-weight: bolder;
+      }
+      p:nth-child(2){
+        font-size: 120%;
+        font-weight: bold;
+      }
+    }
+    td:last-child{
+      p{
+        text-align: left;
+      }
+    }
+    td:first-child{
+      font-size: 150%;
+      color: rgba(128, 128, 128, 0.54);
+      font-weight: bold;
+    }
+  }
+}
+p{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  text-align:justify!important;
+}
+}

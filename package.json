@@ -1,0 +1,19 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}
