@@ -52,19 +52,28 @@ body{
     }
     td:last-child{
       p{
-        text-align: left;
+        font-size: 110%;
+        font-weight: 600;
+        text-align:justify!important;
+        margin-bottom: 2% !important;
+      }
+      p.ref-text{
+        text-align: center!important;
+      }
+      p:last-child{
+        margin-bottom: 0 !important;
       }
     }
     td:first-child{
       font-size: 150%;
       color: rgba(128, 128, 128, 0.54);
       font-weight: bold;
+      padding-right: 5%;
     }
   }
 }
 p{
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-  text-align:justify!important;
 }
 }
