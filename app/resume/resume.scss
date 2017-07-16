@@ -5,13 +5,19 @@
 
 @media screen ,print{
 body{
-  font-family: 'Roboto', sans-serif;
-  font-size: small;
-  -webkit-print-color-adjust: exact;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: small !important;
+  @media (max-width:768px) {
+    font-size: xx-small !important;
+  }
   .resume-section{
     padding:15px;
     .basic-information{
       margin-bottom: 2%;
+      text-align: right;
+      @media(max-width:768px) {
+        text-align: center;
+      }
       .name-font{
         font-size: 750%;
       }
@@ -24,6 +30,7 @@ body{
       }
     }
     td{
+      float: left !important;
       border:transparent !important;
     }
     td:nth-child(2){
@@ -31,6 +38,9 @@ body{
       p{
         color:#00bfff;
         text-align: right;
+        @media (max-width: 768px) {
+          text-align: left;
+        }
       }
       p.experience-label{
         color:#ff3399;
@@ -53,10 +63,11 @@ body{
     td:last-child{
       p{
         font-size: 110%;
-        font-weight: 600;
+        font-weight: 500;
         text-align:justify!important;
         margin-bottom: 2% !important;
       }
+
       p.ref-text{
         text-align: center!important;
       }
@@ -66,9 +77,18 @@ body{
     }
     td:first-child{
       font-size: 150%;
-      color: rgba(128, 128, 128, 0.54);
+      text-align: right;
+      @media(max-width: 768px){
+        font-size: 135%;
+        text-align: left;
+      }
+      color: rgba(128, 128, 128, 0.96);
       font-weight: bold;
       padding-right: 5%;
+    }
+    .make-bolder{
+      font-weight: 700 !important;
+      font-size: 120%!important;
     }
   }
 }

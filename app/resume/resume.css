@@ -4,13 +4,23 @@
 
 @media screen, print {
   body {
-    font-family: 'Roboto', sans-serif;
-    font-size: small;
-    -webkit-print-color-adjust: exact; }
+    font-family: 'Roboto', sans-serif !important;
+    font-size: small !important; } }
+  @media screen and (max-width: 768px), print and (max-width: 768px) {
+    body {
+      font-size: xx-small !important; } }
+
+@media screen, print {
     body .resume-section {
       padding: 15px; }
       body .resume-section .basic-information {
-        margin-bottom: 2%; }
+        margin-bottom: 2%;
+        text-align: right; } }
+      @media screen and (max-width: 768px), print and (max-width: 768px) {
+        body .resume-section .basic-information {
+          text-align: center; } }
+
+@media screen, print {
         body .resume-section .basic-information .name-font {
           font-size: 750%; }
         body .resume-section .basic-information .same-line {
@@ -19,12 +29,18 @@
           color: gray;
           font-size: 110%; }
       body .resume-section td {
+        float: left !important;
         border: transparent !important; }
       body .resume-section td:nth-child(2) {
         padding-right: 5%; }
         body .resume-section td:nth-child(2) p {
           color: #00bfff;
-          text-align: right; }
+          text-align: right; } }
+        @media screen and (max-width: 768px), print and (max-width: 768px) {
+          body .resume-section td:nth-child(2) p {
+            text-align: left; } }
+
+@media screen, print {
         body .resume-section td:nth-child(2) p.experience-label {
           color: #ff3399; }
         body .resume-section td:nth-child(2) p.skills-label {
@@ -39,7 +55,7 @@
           font-weight: bold; }
       body .resume-section td:last-child p {
         font-size: 110%;
-        font-weight: 600;
+        font-weight: 500;
         text-align: justify !important;
         margin-bottom: 2% !important; }
       body .resume-section td:last-child p.ref-text {
@@ -48,9 +64,19 @@
         margin-bottom: 0 !important; }
       body .resume-section td:first-child {
         font-size: 150%;
-        color: rgba(128, 128, 128, 0.54);
+        text-align: right;
+        color: rgba(128, 128, 128, 0.96);
         font-weight: bold;
-        padding-right: 5%; }
+        padding-right: 5%; } }
+      @media screen and (max-width: 768px), print and (max-width: 768px) {
+        body .resume-section td:first-child {
+          font-size: 135%;
+          text-align: left; } }
+
+@media screen, print {
+      body .resume-section .make-bolder {
+        font-weight: 700 !important;
+        font-size: 120% !important; }
   p {
     margin-top: 0px !important;
     margin-bottom: 0px !important; } }
